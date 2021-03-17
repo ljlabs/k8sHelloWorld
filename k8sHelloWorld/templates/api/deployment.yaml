@@ -5,7 +5,6 @@ metadata:
   labels:
     app: k8shelloworld
 spec:
-  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: k8shelloworld
@@ -19,3 +18,8 @@ spec:
         image: jordaan0/k8s_hello_world:latest
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            cpu: 200m
+          requests:
+            cpu: 100m
