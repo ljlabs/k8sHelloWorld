@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from heavyCall import thisIsAHeavyCall
+from app.heavyCall import thisIsAHeavyCall
 
 app = FastAPI()
 

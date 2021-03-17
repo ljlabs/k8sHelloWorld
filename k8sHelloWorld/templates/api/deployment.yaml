@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: k8shelloworld
-        image: jordaan0/k8s_hello_world:latest
+        image: jordaan0/k8s_hello_world:version-0.0.2
         ports:
         - containerPort: 80
         resources:
